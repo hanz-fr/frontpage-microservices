@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className="mt-10">
-        <h1>Main Page</h1>
+        <h1 className="mt-10 mx-auto my-auto">HELLLOOO BITCHESSS</h1>
       </main>
     </div>
   );
