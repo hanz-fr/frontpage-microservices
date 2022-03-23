@@ -1,7 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from "next/link";
 
+import axios from "./configs/axios";
 
-export default function Home() {
+function Home(props) {
+
+  console.log(props);
   return (
     <div className="container mx-auto my-10">
       <Head>
@@ -12,7 +16,21 @@ export default function Home() {
 
       <main className="bg-slate-white rounded-md p-5 shadow-lg">
         <h1 className="font-bold text-xl flex justify-center">NEXT JS FRONTPAGE</h1>
+        <Link href="/courses">
+          <a>To Random Page</a>
+        </Link>
       </main>
     </div>
   );
 }
+
+Home.getInitialProps = async () => {
+  try {
+    const data = await axios.get(`/courses`);
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
+export default Home;
