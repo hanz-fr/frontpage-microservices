@@ -14,7 +14,7 @@ function Todo({ data }) {
           <h1 className="text-3xl font-bold">{data.title}</h1>
           <h1 className="text-xl font-semibold">{data.id}</h1>
           <p>Complete your task</p>
-          <Link href="/random">
+          <Link href="/courses">
             <a>To random page</a>
           </Link>
         </main>
