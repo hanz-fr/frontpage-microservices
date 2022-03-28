@@ -7,8 +7,8 @@ export default function hero() {
     <div className="flex justify-between items-center">
       <div className="w-1/2">
         <h1 className="text-5xl text-white mb-5">
-          <span className="text-teal-400"> The New </span> Way to Achieve Good
-          <span className="text-teal-400"> Skills</span>
+          <span className="text-teal-400 font-bold"> The New </span>Way to<br/> Achieve Good
+          <span className="text-teal-400 font-bold"> Skills</span>
         </h1>
         <p className="text-white text-lg mb-8">
           We provide tons of pathskill that you
@@ -43,10 +43,10 @@ export default function hero() {
             className="absolute z-10 bg-white py-3 px-4 mt-24"
             style={{ transform: "translateX(47%) translateY(100%)", width: 290 }}
           >
-            <p className="text-gray-900 mb-2">
+            <p className="text-gray-900 mb-2 font-semibold">
               "The courses is understandable and pretty straightforward."
             </p>
-            <span className="text-gray-600">
+            <span className="text-gray-600 font-semibold">
               Giga Chad, Full-Stack Developer
             </span>
           </div>

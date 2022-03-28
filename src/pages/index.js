@@ -7,6 +7,8 @@ import Circle from "public/images/circle-accent-1.svg";
 
 import Header from 'src/pages/parts/header';
 import Hero from 'src/pages/parts/hero';
+import Clients from 'src/pages/parts/clients';
+import ListCourses from 'src/pages/parts/ListCourses';
 
 function Home({ data }) {
 
@@ -18,13 +20,26 @@ function Home({ data }) {
       </Head>
 
       <main>
+
+        {/* Header */}
         <section className="header-clipping pt-10 min-h-screen md:min-h-0">
+          {/* Circle SVG */}
           <Circle className="absolute left-0 bottom-0"></Circle>
           <div className="sunshine max-w-full"></div>
           <div className="container mx-auto px-5">
-            <Header className="flex justify-between"></Header>
-            <Hero></Hero>
+            <Header className="flex justify-between"></Header> {/* Header Components */}
+            <Hero></Hero> {/* Hero Image */}
           </div>
+        </section>
+
+        {/* Clients (Amazon, Tesla, Google, etc.) */}
+        <section className="container mx-auto pt-24">
+          <Clients></Clients>
+        </section>
+
+        {/* Courses */}
+        <section className="container mx-auto pt-24 pb-24">
+          <ListCourses data={data}></ListCourses>
         </section>
       </main>
     </>
@@ -33,7 +48,7 @@ function Home({ data }) {
 
 Home.getInitialProps = async () => {
   try {
-    const data = await axios.get(`/courses`);
+    const data = await axios.get(`/api/courses`);
     return data;
   } catch (error) {
     return error;

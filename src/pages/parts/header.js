@@ -25,7 +25,7 @@ export default function header({ onLight }) {
       <ul className="flex justify-center my-auto">
         <li className="h-min w-min px-6 py-3">
           <Link href="/">
-            <a className="text-white hover:text-teal-500 text-lg"
+            <a className="text-white hover:text-teal-500 text-lg transition-all duration-200 font-medium"
               /* className={[
                 linkColor,
                 "text-white hover:text-teal-500 text-lg",
@@ -37,7 +37,7 @@ export default function header({ onLight }) {
         </li>
         <li className="h-min w-min px-6 py-3">
           <Link href="/">
-            <a className="text-white hover:text-teal-500 text-lg" 
+            <a className="text-white hover:text-teal-500 text-lg transition-all duration-200 font-medium" 
             >
               Pricing
             </a>
@@ -45,7 +45,7 @@ export default function header({ onLight }) {
         </li>
         <li className="h-min w-min px-6 py-3">
           <Link href="/">
-            <a className="text-white hover:text-teal-500 text-lg" 
+            <a className="text-white hover:text-teal-500 text-lg transition-all duration-200 font-medium" 
             >
               Features
             </a>
@@ -53,7 +53,7 @@ export default function header({ onLight }) {
         </li>
         <li className="h-min w-min px-6 py-3">
           <Link href="/">
-            <a className="text-white hover:text-teal-500 text-lg" 
+            <a className="text-white hover:text-teal-500 text-lg transition-all duration-200 font-medium" 
             >
               Story
             </a>
@@ -62,7 +62,7 @@ export default function header({ onLight }) {
         <li className="h-min w-min px-6 py-3">
             <a
             target="_blank" rel="noopener noreferrer" href={linkCTA} 
-              className="bg-indigo-700 hover-bg-indigo-800 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3"
+              className="bg-indigo-700 hover-bg-indigo-800 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3 font-medium"
             >
               {textCTA}
             </a>
