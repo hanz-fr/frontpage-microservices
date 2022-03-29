@@ -44,7 +44,7 @@ export default function hero() {
             style={{ transform: "translateX(47%) translateY(100%)", width: 290 }}
           >
             <p className="text-gray-900 mb-2 font-semibold">
-              "The courses is understandable and pretty straightforward."
+              "Dulu saya pengangguran. Sekarang, saya bisa bekerja di Google sebagai FS developer."
             </p>
             <span className="text-gray-600 font-semibold">
               Giga Chad, Full-Stack Developer

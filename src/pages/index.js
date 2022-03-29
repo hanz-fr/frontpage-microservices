@@ -9,6 +9,7 @@ import Header from 'src/pages/parts/header';
 import Hero from 'src/pages/parts/hero';
 import Clients from 'src/pages/parts/clients';
 import ListCourses from 'src/pages/parts/ListCourses';
+import ListCategories from 'src/pages/parts/ListCategories';
 
 function Home({ data }) {
 
@@ -38,9 +39,15 @@ function Home({ data }) {
         </section>
 
         {/* Courses */}
-        <section className="container mx-auto pt-24 pb-24">
+        <section className="container mx-auto pt-24">
           <ListCourses data={data}></ListCourses>
         </section>
+
+        {/* Categories */}
+        <section className="container mx-auto pt-24">
+          <ListCategories></ListCategories>
+        </section>
+        <section className="container mx-auto py-24"></section>
       </main>
     </>
   );
