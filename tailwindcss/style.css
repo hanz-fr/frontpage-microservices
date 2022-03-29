@@ -105,3 +105,15 @@
 .card:hover h5 {
   @apply text-indigo-400;
 }
+
+.footer {
+  background-color: #161A4F;
+}
+
+.footer-copyright {
+  border-color: #333769;
+}
+
+.footer-text {
+  color: #53589D;
+}
